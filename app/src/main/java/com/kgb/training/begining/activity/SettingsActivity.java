@@ -1,4 +1,4 @@
-package com.kgb.training.begging.activity;
+package com.kgb.training.begining.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
