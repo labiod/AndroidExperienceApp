@@ -19,7 +19,8 @@
     - Api version 4.0
     - use fragment in Activity
     - use android support library
-    - create simple unit test
+    - create menu option
+    - working with Intent start second activity
     
 ### TAG 0.0.1
     - Initial version, create application using Android studio.
