@@ -14,16 +14,15 @@
     I have 5-6 years experience in android development but the idea for this app came up right now.
     So I must complete the previous years. But first thinks first.
 
-
-### TAG 0.0.2
-    - Api version 4.0
+### TAG 0.0.2 Multi view (working with fragment and other activity)
+    - Api 14 Android 4.0
     - use fragment in Activity
     - use android support library
     - create menu option
-    - working with Intent start second activity
+    - working with Intent which start second activity
     
-### TAG 0.0.1
+### TAG 0.0.1 Android Start
     - Initial version, create application using Android studio.
-    - Api version 4.0
+    - Api 14 Android 4.0
     - create simple Activity
     - create simple layout with button and text view
