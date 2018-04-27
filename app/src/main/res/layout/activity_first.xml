@@ -3,38 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#aa99dd"
         >
-        <TextView
+        <Button
+            android:id="@+id/relative_layout_fragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Working with fragment"/>
-        <fragment
-            android:id="@+id/first_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:name="com.kgb.training.begining.fragment.FirstFragment"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#ff00ff"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Second fragment"
-            />
+            android:text="Relative layout"/>
 
-        <FrameLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/linear_layout_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linear layout"/>
+
+        <Button
+            android:id="@+id/list_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListView"/>
     </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

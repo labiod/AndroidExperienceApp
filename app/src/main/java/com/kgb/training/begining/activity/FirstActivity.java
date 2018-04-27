@@ -8,11 +8,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.kgb.training.R;
-import com.kgb.training.begining.fragment.SecondFragment;
+import com.kgb.training.begining.fragment.LinearLayoutFragment;
+import com.kgb.training.begining.fragment.ListViewFragment;
+import com.kgb.training.begining.fragment.RelativeLayoutFragment;
 
 public class FirstActivity extends Activity {
 
@@ -25,7 +29,27 @@ public class FirstActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
         mContainer = (FrameLayout) findViewById(R.id.container);
-        getFragmentManager().beginTransaction().add(R.id.container, new SecondFragment()).commit();
+        Button relativeLayout = (Button) findViewById(R.id.relative_layout_fragment);
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.container, new RelativeLayoutFragment()).commit();
+            }
+        });
+        Button linearLayout = (Button) findViewById(R.id.linear_layout_fragment);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.container, new LinearLayoutFragment()).commit();
+            }
+        });
+        Button listLayout = (Button) findViewById(R.id.list_fragment);
+        listLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.container, new ListViewFragment()).commit();
+            }
+        });
     }
 
     @Override

@@ -10,9 +10,16 @@
         0.2.1 - means that my experience in android equals two months and was only one release in last month
         1.2.3 - experience equals 1 year and 2 months and in the last month was 3 release
 
-## Current TAG - 0.0.2
+## Current TAG - 0.0.3
     I have 5-6 years experience in android development but the idea for this app came up right now.
     So I must complete the previous years. But first thinks first.
+    
+### TAG 0.0.3 Working with layouts and view
+    - Api 14 Android 4.0
+    - working with layout LinearLayout, RelativeLayout
+    - create view with list of item
+    - use layout weight attribute
+    
 
 ### TAG 0.0.2 Multi view (working with fragment and other activity)
     - Api 14 Android 4.0
